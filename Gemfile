@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
 # local 
-gem "jekyll", "~> 3.9.0"
-gem "kramdown-parser-gfm", "~> 1.1.0"
+gem "jekyll", "~> 4.2.0"
+#gem "kramdown-parser-gfm", "~> 1.1.0"
 
 ## for github hosting
 #gem "github-pages", group: :jekyll_plugins
