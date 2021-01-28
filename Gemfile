@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 
 # local 
-#gem "jekyll", "~> 3.9.0"
-#gem "kramdown-parser-gfm", "~> 1.1.0"
+gem "jekyll", "~> 3.9.0"
+gem "kramdown-parser-gfm", "~> 1.1.0"
 
 ## for github hosting
-gem "github-pages", group: :jekyll_plugins
+#gem "github-pages", group: :jekyll_plugins
 # plugins
 group :jekyll_plugins do
   gem "jekyll-paginate"
