@@ -32,7 +32,7 @@ social:
     # - https://www.facebook.com/username
     #- https://www.linkedin.com/in/
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+google_site_verification: w8VhwO-lEDaJX3INIR7pdY5PrPeATfHGPA8l3RZ1HHo # change to your verification string
 # --------------------------
 
 
@@ -81,7 +81,7 @@ theme_mode: dark #[light|dark]
 img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/my_avatar.jpg
+avatar: /assets/img/avatar.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
