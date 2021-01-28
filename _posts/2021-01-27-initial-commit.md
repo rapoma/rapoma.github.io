@@ -6,15 +6,13 @@ categories: [Post, Tutorial]
 tags: [writing, learning, jekyll, github]
 ---
 
-Intro
-=====
+## Intro
 
 
 In this first post, I give the steps I followed, by making this personal website. There are no particular requirements to be able to follow along. I would recommend you to explore [jekyll](https://jekyllrb.com/), and [Chirpy](https://chirpy.cotes.info) tho. Both provides a quick start guide from zero to hosting your static site on [github](https://github.com/)
 
 
-Steps
-=====
+## Steps
 
 
 For the development, this method should work on any platforms. I use [docker](https://www.docker.com/) for the local development. You then need to have *docker* and *docker-compose* installed.

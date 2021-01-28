@@ -169,7 +169,6 @@ defaults:
           url: /
 
 sass:
-  sass_dir: /assets/css
   style: compressed
 
 compress_html:
@@ -186,9 +185,11 @@ exclude:
   - Gemfile.lock
   - Gemfile
   - tools
-  - docs
   - README.md
   - LICENSE
+  - gulpfile.js
+  - package.json
+  - package-lock.json
 
 jekyll-archives:
   enabled: [categories, tags]

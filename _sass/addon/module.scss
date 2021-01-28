@@ -1,10 +1,5 @@
 /*
 * Mainly scss modules, only imported to `assets/css/main.scss`
-*
-* v2.1
-* https://github.com/cotes2020/jekyll-theme-chirpy
-* © 2020 Cotes Chung
-* MIT Licensed
 */
 
 /* ---------- scss placeholder --------- */
@@ -100,6 +95,7 @@
 
 @mixin panel-label {
   @include label(inherit);
+
   display: block;
   line-height: 1.2;
   padding-top: 0.5rem;

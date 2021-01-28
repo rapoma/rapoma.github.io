@@ -1,21 +1,10 @@
----
-# Post-specific style
-# v2.0
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2019 Cotes Chung
-# MIT License
----
-
-
-{% include_relative _addon/main.scss %}
-{% include_relative _addon/syntax.scss %}
-
-$prompt-older: "{{ site.data.label.post.button.previous }}";
-$prompt-newer: "{{ site.data.label.post.button.next }}";
+/*
+  Post-specific style
+*/
 
 @mixin btn-sharing-color($light-color, $important: false) {
   @if $important {
-    color: var(--btn-share-color, $light-color)!important;
+    color: var(--btn-share-color, $light-color) !important;
   } @else {
     color: var(--btn-share-color, $light-color);
   }
@@ -34,15 +23,17 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   padding-right: $pr;
 }
 
-.post .post-meta {
+#post-wrapper .post-meta {
   > div:nth-child(2) {
     > span:not(:first-child)::before {
       @include dot;
     }
   }
+
   #pv::after {
     content: " views";
   }
+
   .readtime::after {
     content: " read";
   }
@@ -50,9 +41,10 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 
 .post-content {
   .preview-img {
+    @include align-center;
+
     margin-top: 0;
     margin-bottom: 2.5rem;
-    @include align-center;
   }
 }
 
@@ -72,6 +64,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 
   .btn {
     @include btn-post-nav;
+
     color: var(--link-color);
     &:hover {
       background: #2a408e;
@@ -80,6 +73,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
     }
     &.disabled {
       @include btn-post-nav;
+
       pointer-events: auto;
       cursor: not-allowed;
       background: none;
@@ -100,27 +94,22 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
     white-space: normal;
   }
 
-  a, span {
+  a {
     &::before {
       color: var(--text-muted-color);
       font-size: 0.65rem;
       text-transform: uppercase;
+      content: attr(prompt);
     }
     &:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       left: 0.5px;
-      &::before {
-        content: $prompt-older
-      }
     }
     &:last-child {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       right: 0.5px;
-      &::before {
-        content: $prompt-newer
-      }
     }
   }
 } // .post-navigation
@@ -153,17 +142,16 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   }
 }
 
-#toc li>a {
+#toc li > a {
   line-height: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-
-/*--- Related Posts ---*/
+/* --- Related Posts --- */
 
 #related-posts {
-  >h3 {
+  > h3 {
     @include label(1.1rem, 600);
   }
   .card {
@@ -179,7 +167,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
     &:hover {
       -webkit-transform: translate3d(0, -3px, 0);
       transform: translate3d(0, -3px, 0);
-      box-shadow: 0 10px 15px -4px rgba(0,0,0,0.15);
+      box-shadow: 0 10px 15px -4px rgba(0, 0, 0, 0.15);
     }
   }
 
@@ -204,7 +192,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   ul {
     list-style-type: none;
     padding-inline-start: 1.5rem;
-    >li::before {
+    > li::before {
       background: #c2c9d4;
       width: 5px;
       height: 5px;
@@ -230,12 +218,17 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 }
 
 %btn-share-hovor {
-  color: var(--btn-share-hover-color)!important;
+  color: var(--btn-share-hover-color) !important;
 }
 
 .share-wrapper {
   vertical-align: middle;
   user-select: none;
+
+  i {
+    font-weight: 400;
+  }
+
   .share-icons {
     font-size: 1.2rem;
     a {
@@ -244,12 +237,12 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
       }
       &:hover {
         text-decoration: none;
-        >i {
+        > i {
           @extend %btn-share-hovor;
         }
       }
     }
-    >i {
+    > i {
       padding-top: 0.35rem;
       &:hover {
         @extend %btn-share-hovor;
@@ -257,7 +250,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
     }
     .fab {
       &.fa-twitter {
-        @include btn-sharing-color(rgba(29, 161, 242, 1.00));
+        @include btn-sharing-color(rgba(29, 161, 242, 1));
       }
       &.fa-facebook-square {
         @include btn-sharing-color(rgb(66, 95, 156));
@@ -278,9 +271,9 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 
 } // .share-wrapper
 
-
 .share-label {
   @include label(inherit, 400, inherit);
+
   &::after {
     content: ":";
   }
@@ -288,49 +281,56 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 
 .license-wrapper {
   line-height: 1.2rem;
-  >a {
+  > a {
     font-weight: 600;
     &:hover {
       @extend %link-hover;
     }
   }
-  i {
-    font-weight: 400;
-  }
+
   span:last-child {
     font-size: 0.85rem;
   }
 } // .license-wrapper
 
-
 @media all and (max-width: 576px) {
   .post-tail-bottom {
-    -ms-flex-wrap: wrap-reverse!important;
-    flex-wrap: wrap-reverse!important;
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
     >div:first-child {
       width: 100%;
       margin-top: 1rem;
     }
   }
+
+  .post-content > div[class^='language-'] {
+    @include ml-mr(-1.25rem);
+
+    border-radius: 0;
+    &::before { // the lang badge
+      right: 1rem;
+    }
+  }
+
 }
 
 @media all and (max-width: 768px) {
-  .post img {
+  .post-content > p > img {
     max-width: calc(100% + 1rem);
   }
 }
 
 @media all and (min-width: 768px) {
-  .post {
+  #post-wrapper {
     .post-meta {
       >div:not(:first-child)::before {
         @include dot(0.5rem, 0.2rem);
       }
       &.flex-column {
-        -webkit-box-orient: horizontal!important;
-        -webkit-box-direction: normal!important;
-        -ms-flex-direction: row!important;
-        flex-direction: row!important;
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
       }
     }
   } // .post
