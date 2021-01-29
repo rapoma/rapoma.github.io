@@ -98,7 +98,7 @@ CMD [ "bash" ]
 
 Save this Dockerfile at the same level as the downloaded source ```sage-9.2.tar.gz```.
 
-Next in the same directory create file ```entrypoint.sh``` and add the follwing 
+Next in the same directory create a file ```entrypoint.sh``` and add the following 
 
 ```shell
 #!/bin/bash
@@ -130,13 +130,11 @@ you will be redirect in a sage interpreter, try to run some basic command.
 
 ## Tips
 
-1. Why would I recommend using this even you are running on a platform that you can download the binary directly? because some of the package are not fully available using ```sage --package list```. For instance, I personally struggling to install [database_kohel](http://mirrors.mit.edu/sage/spkg/upstream/database_kohel/database_kohel-20160724.tar.gz).
++ Why would I recommend using this even you are running on a platform that you can download the binary directly? because some of the package are not fully available using ```sage --package list```. For instance, I personally struggling to install [database_kohel](http://mirrors.mit.edu/sage/spkg/upstream/database_kohel/database_kohel-20160724.tar.gz).
 
-2. The image is big, around 18GB. Well as I said if you pull the image from docker hub ```sagemath/sagemath```, you might have the same issue when checking ```sage --package list```, or even gave you a complain since its has removed the build directory. 
++ The image is big, around 18GB. Well as I said if you pull the image from docker hub ```sagemath/sagemath```, you might have the same issue when checking ```sage --package list```, or even gave you a complain since its has removed the build directory. The image tagged ```dev``` gives you this tho but the problem is that it recompile every-time you run the container. 
 
-The image tagged ```dev``` gives you this tho but the problem is that it recompile every-time you run the container. 
-
-3. If you use [jupyter](https://jupyter.org/), use the command ```sage-jupyter```, everything should go smoothly. here is a simple ```docker-compose.yml``` that can be helpful when working on notebook.
++ If you use [jupyter](https://jupyter.org/), use the command ```sage-jupyter```, everything should go smoothly. here is a simple ```docker-compose.yml``` that can be helpful when working on notebook.
 
 ```yml
 version: "3.8"
@@ -152,4 +150,4 @@ services:
     command: sage-jupyter
 ```
 
-4. Happy hacking 😃, let me know in the comment if you encounter problem by following this steps.  
++ Happy hacking 😃, let me know in the comment if you encounter problem by following this steps.  
