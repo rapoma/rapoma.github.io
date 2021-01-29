@@ -3,7 +3,7 @@ title: Initial commit
 author: Rapoma
 date: 2021-01-27 21:10:00 +0100
 categories: [Post, Tutorial]
-tags: [sharing, jekyll, github]
+tags: [sharing, jekyll, github, docker, arm64]
 image: /assets/img/posts/post1.png
 ---
 
@@ -18,7 +18,7 @@ In this first post, I share the steps I followed, by making this personal websit
 
 For development, this method should work on any platforms. I use [docker](https://www.docker.com/) for the local development. You then need to have *docker* and *docker-compose* installed.
 
-You can look at the docker hub the image ```jekyll/jekyll``` by just pulling the latest image (4.0). Last time I checked, there is no image for arm64. I had to build the image from a ```Dockerfile```. Looking into this [repository](https://github.com/envygeeks/jekyll-docker) and did some *massage* on their Dockerfile.
+You can look at the docker hub the image ```jekyll/jekyll``` by just pulling the latest image (4.0). Last time I checked, there is no image for arm64. I had to build the image from a ```Dockerfile```. Looking into its [repository](https://github.com/envygeeks/jekyll-docker) and did some *massage* on their Dockerfile.
 
 ### Downloading the repo
 
