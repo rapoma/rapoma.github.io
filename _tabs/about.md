@@ -4,10 +4,8 @@ icon: fas fa-info
 order: 4
 ---
 
--------------------------------------------------------------------------------------------------
 
-Dear Reader,
-============
+{% include dear-reader.html %}
 
 
 My name is [<strong> Louis Nantenaina Andrianaivo </strong>](https://github.com/rapoma), originally from [Madagascar](https://en.wikipedia.org/wiki/Madagascar), *the country*. 
