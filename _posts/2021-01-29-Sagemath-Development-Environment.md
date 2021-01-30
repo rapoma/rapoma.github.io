@@ -9,7 +9,7 @@ image: https://www.sagemath.org/pix/sage_logo_new_l_hc_edgy-nq8.png
 
 ## Intro
  
-In this post, I share the steps I followed, by making a develpment enviroment for [sage](https://www.sagemath.org/). There are no particular requirements to be able to follow along. I would recommend you to explore the [documentation](https://doc.sagemath.org/) for installing sage from source.
+In this post, I share the steps I followed, by making a development environment for [sage](https://www.sagemath.org/). There are no particular requirements to be able to follow along. I would recommend you to explore the [documentation](https://doc.sagemath.org/) for installing sage from source.
 
 [Sagemath](https://www.sagemath.org/) is a free open source, covering several discipline in Mathematics. It uses [python](https://www.python.org/) as an interpreter for several library written in (C, C++, etc) such as [PARI](http://pari.math.u-bordeaux.fr/), [GAP](https://www.gap-system.org/) and so much more.
 Sage is one of the important software that student (undergraduate, graduate), researcher in Mathematics needed to know, especially in applied field. It has its limit but at least we have (should) some reference to our result, what I mean is that let assume in your research you have invented a fast algorithm for computing [Galois Group](https://encyclopediaofmath.org/index.php?title=Galois_group), since Sage will run forever on higher degree more than 6. As well, the last time I checked Pari could do up to degree 11. So that your algorithm should match those results. 
