@@ -72,3 +72,80 @@
         transform: scale(0.75);
     }
     }
+
+
+// for skills 
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+ .skills {
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .column{
+    width: 100%;
+}
+
+.skills .skills-content .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .line{
+    height: 10px;
+    width: 100%;
+    background: white;
+    position: relative;
+    border-radius: 5px;
+}
+.skills .skills-content .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    background: gray;
+}
+.skills-content .twentyfive::before{
+    width: 25%;
+}
+.skills-content .fifty::before{
+    width: 50%;
+}
+.skills-content .sixty::before{
+    width: 60%;
+}
+.skills-content .seventy::before{
+    width: 75%;
+}
+.skills-content .seventyfive::before{
+    width: 75%;
+}
+.skills-content .eighty::before{
+    width: 80%;
+}
+.skills-content .ninety::before{
+    width: 90%;
+}
+.skills-content .full::before{
+    width: 100%;
+}

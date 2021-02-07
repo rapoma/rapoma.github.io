@@ -1,0 +1,28 @@
+-
+  type: C/C++
+  level: seventy
+-
+  type: C/C++ cuda
+  level: seventy
+-
+  type: Python
+  level: ninety
+-
+  type: Julia
+  level: ninety
+- 
+  type: Sagemath
+  level: seventy
+-
+  type: Matematica
+  level: seventy
+-
+  type: Java/ Android/ Kotlin
+  level: fifty
+-
+  type: C# (Unity)
+  level: fifty
+-
+  type: Javascript
+  level: sixty
+
