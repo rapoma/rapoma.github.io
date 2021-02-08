@@ -3,7 +3,7 @@ title: Sagemath development environment
 author: Rapoma
 date: 2021-01-29 02:21:00 +0100
 categories: [Post, Tutorial]
-tags: [mathematics, sagemath, sharing, docker, arm64]
+tags: [mathematics, sagemath, sharing, docker, arm64, apple-m1,apple-silicon]
 image: https://www.sagemath.org/pix/sage_logo_new_l_hc_edgy-nq8.png
 ---
 

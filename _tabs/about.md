@@ -26,7 +26,7 @@ Currently, I am an *Assistant Researcher* at the [Department of Control and Comp
 
 {% include myskills.html %}
 
-## Apendices
+## Appendices
 
 + My academic background is mathematics. 
 + I am very passionate about new tech, also I am very considering their huge implications.
