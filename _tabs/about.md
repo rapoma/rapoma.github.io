@@ -29,7 +29,7 @@ Currently, I am an *Assistant Researcher* at the [Department of Control and Comp
 ## Appendices
 
 + My academic background is mathematics. 
-+ I am very passionate about new tech, also I am very considering their huge implications.
++ I am very passionate about new tech, I am also considering their huge implications.
 + Beginner in front-end, styling. Zero talent in design. Not a big fan of reading book.
 
  
