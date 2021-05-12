@@ -10,11 +10,19 @@ order: 4
 
 My name is [<strong> Louis Nantenaina Andrianaivo </strong>](https://github.com/rapoma), originally from [Madagascar](https://en.wikipedia.org/wiki/Madagascar), *the country*. 
 
-I am a junior software developer, based in Turin, Italy.
+I am a junior software (and web) developer freelance, based in Roma, Italy.
 
 ## Bio
 
-Currently, I am an *Assistant Researcher* at the [Department of Control and Computer Engineering](https://www.dauin.polito.it/), of Politecnico Di Torino. More specifically, I am working at [FULL](https://full.polito.it/), multi-disciplinary Research Lab that has for main task in Design and Architecture by combining different approach. My research focus is mainly on applying machine learning algorithm in Urban and Architecture data. 
+I am working as a software developer. I could work on web project, especially backend. I have background in Machine Learning (Deep Learning), Cryptography. 
+Here are some of the project that I have done (contribute) before:
+
+    - GIS application (using Postgis, PgRouting) ex: PyQGIS plugin, processing
+    - Django application
+    - Mobile development (Unity)
+    - Computer vision application uses ML (from processing the dataset to deploying model)
+
+I am very skilled in several tools such as vagrant, docker, git (CI/CD). 
 
 ## Interests
 
